@@ -1,0 +1,13 @@
+<%= form_for @event do |f| %>
+  <%= f.label :name, "Nome do evento" %>
+  <%= f.text_field :name %>
+  <%= f.label :location, "Localização" %>
+  <%= f.text_field :location %>
+  <%= f.label :date, "Data" %>
+  <%= f.text_field :date %>
+  <%= f.label :hour, "Hora" %>
+  <%= f.text_field :hour %>
+  <%= f.label :description, "Descrição" %>
+  <%= f.text_field :description %>
+  <%= f.submit "Cadastrar evento" %>
+<% end %>
