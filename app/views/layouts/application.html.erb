@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terapia Cão Carinho</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+    <span>TCC</span>
+    <nav id="social">
+      <%= link_to "#" do %>
+        Facebook
+      <% end %>
+      <%= link_to "#" do %>
+        Twitter
+      <% end %>
+      <%= link_to "#" do %>
+        Istagram
+      <% end %>
+    </nav>
+    <nav id="menu">
+      <%= link_to "#" do %>
+        <menuitem>Participe</menuitem>
+      <% end %>
+      <%= link_to "#" do %>
+        <menuitem>Doações</menuitem>
+      <% end %>
+      <%= link_to "#" do %>
+        <menuitem>Área do voluntário</menuitem>
+      <% end %>
+      <%= link_to "#" do %>
+        <menuitem>Contato</menuitem>
+      <% end %>
+    </nav>
+    <nav id="menu-voluntarios">
+      <%= link_to "#" do %>
+        <menuitem>Eventos</menuitem>
+      <% end %>
+      <%= link_to "#" do %>
+        <menuitem>Fotos</menuitem>
+      <% end %>
+      <%= link_to "#" do %>
+        <menuitem>Voluntários</menuitem>
+      <% end %>
+      <%= link_to "#" do %>
+        <menuitem>Relatórios</menuitem>
+      <% end %>
+    </nav>
+  </header>
+  <body>
+    <%= yield %>
+  </body>
+  <footer> Copyright Terapia Cão Carinho </footer>
+</html>
