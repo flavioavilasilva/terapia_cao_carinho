@@ -1,0 +1,2 @@
+class TherapistDog < ApplicationRecord
+end
