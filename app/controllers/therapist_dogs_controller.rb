@@ -11,7 +11,7 @@ class TherapistDogsController < ApplicationController
   end
 
   def show
-
+    @therapist_dog = TherapistDog.find(params[:id])
   end
 
   private
